@@ -1,11 +1,6 @@
 import pokemon from './data.js';
+import { increaseCaught, increaseSeen } from './localStorageUtils.js';
 
-
-function findByUnderscoreId(array, id) {
-    for (let item of array) {
-        if (item._id === id) return item;
-    }
-}
 
 let numberOfPlays = 0;
 
@@ -14,6 +9,12 @@ function getRandomPoke() {
     const randomPokeData = Math.floor(Math.random() * pokemon.length);
     // return the data from array
     return pokemon[randomPokeData];
+}
+
+export function findByUnderscoreId(array, id) {
+    for (let item of array) {
+        if (item._id === id) return item;
+    }
 }
 
 function setThreePoke() {
@@ -38,10 +39,13 @@ function setThreePoke() {
     const div = document.getElementById('pokemon');
     div.textContent = '';
 
+    increaseSeen(pokeFirst._id);
+    increaseSeen(pokeSecond._id);
+    increaseSeen(pokeThird._id);
+
     // send the images to the html page
-    div.append(pokeImg1);
-    div.append(pokeImg2);
-    div.append(pokeImg3);
+    div.append(pokeImg1, pokeImg2, pokeImg3);
+  
 }
 
 function renderPokeImage(pokemonItem) {
@@ -49,10 +53,24 @@ function renderPokeImage(pokemonItem) {
     const image = document.createElement('img');
     image.src = pokemonItem.url_image;
     image.classList.add('poke-img');
-  // show the pokemon images
+  
+  // add event listener 
+    image.addEventListener('click', () => {
+        increaseCaught(pokemonItem._id);
+      // if plays are under 10 keep playing
+        if (numberOfPlays < 10) {
+            setThreePoke();
+      // if over 10 send user to the results page
+        } else {
+            window.location = '../results/index.html';
+        }
+        
+    });
+     // show the pokemon images
     return image;
 }
-
+  
+  
 
 setThreePoke();
 

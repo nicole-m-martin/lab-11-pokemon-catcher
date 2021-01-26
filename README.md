@@ -1,6 +1,4 @@
-# EDIT-THIS-README
-
-Make a Pokemon catcher:
+# Make a Pokemon catcher:
 
 HTML:
 Main Page:
@@ -15,12 +13,12 @@ Results Page:
 
 JS:
 
-1. Import Pokemon Data
+1. Import Pokemon Data: done!
 
-2. 3 pokemon randomly generate on the page
+2. 3 pokemon randomly generate on the page : done!
 
-   - check if they are different (they have different ids)
-   - if not, randomly generate 3 more until they are different
+- check if they are different (they have different ids)
+- if not, randomly generate 3 more until they are different
 
 3. When a user clicks on the image:
 
@@ -30,16 +28,16 @@ JS:
 
 4. Create a eventListener so 'on click'
 
-   - Increment the 'captured' property of the chosen
-   - If the user has played 10 times, redirect to a results page
-   - If not, load 3 more pokemon and repeat until they hit 10 plays
+- Increment the 'captured' property of the chosen
+- If the user has played 10 times, redirect to a results page
+- If not, load 3 more pokemon and repeat until they hit 10 plays
 
-5. Create a getRandomPoke function:
+5. Create a getRandomPoke function: done!
 
    - use Math.floor(Math.random() \* the pokemon data.length)
    - add findById function to get the correct pokemon
 
-6. Create a setThreePoke function:
+6. Create a setThreePoke function: Done!
 
 - adds the random pokemon to the page and increment the number of 'user plays'
 - use a while loop to search through the pokemon array:

@@ -45,26 +45,26 @@ JS:
   - If the pokemon have same ideas, grab 3 more until there are 3 different ones.
   - If not, load 3 more pokemon and repeat until they hit 10 plays
 
-7. Create a render pokemon image function:
+7. Create a render pokemon image function: done!
 
 - create the image element in JS
 - use the eventListener to change the images
 - If the user has played 10 times, redirect to a results page
 - If not, load 3 more pokemon and repeat until they hit 10 plays
 
-LocalStorage: 8) Create a magic string as a key (const POKEPLAYS = 'POKEPLAYS')
+LocalStorage: 8) Create a magic string as a key (const POKEPLAYS = 'POKEPLAYS') done!
 
-9. Create a getPokePlays function:
+9. Create a getPokePlays function: done!
 
 - use JSON.parse and JSON.stringify to the plays for the localstorage
 - use an empty string
 - return the plays
 
-10. Create a setPokePlays function:
+10. Create a setPokePlays function: done!
 
 - use JSON.stringify to reset the plays
 
-11. Create an increaseSeen function:
+11. Create an increaseSeen function: done!
 
 - check to see if the pokemon was seen before with findByID function
 - if not, make a new object and push it

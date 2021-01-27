@@ -1,9 +1,9 @@
 body {
-  background: linear-gradient(0.25turn, #3f37c9, #4361ee, #4cc9f0)
+  background: linear-gradient(0.25turn, #3f37c9, #4361ee, #4cc9f0);
 }
 
 main {
-  font-family: 'Rubik', sans-serif;;
+  font-family: "Rubik", sans-serif;
   background-color: var(--color2);
 }
 
@@ -49,14 +49,15 @@ footer {
 h2 {
   font-size: 3rem;
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
 }
 
 th,
 td {
   font-size: 1rem;
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .poke-img {
@@ -65,17 +66,14 @@ td {
   margin-top: 30px;
 }
 .results-main {
-  background: linear-gradient(0.25turn, #3f37c9, #4361ee, #4cc9f0)
+  background: linear-gradient(0.25turn, #3f37c9, #4361ee, #4cc9f0);
 }
 
 #chart {
   margin-top: 45px;
-  background:#f9dcc4;
-  
+  background: #f9dcc4;
 }
 
-
-}
 #pokemon {
   /* display: flex;
   flex-direction: column; */

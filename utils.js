@@ -62,7 +62,7 @@ export function renderPokeImage(pokemonItem) {
             setThreePoke();
       // if over 10 send user to the results page
         } else {
-            window.location = '../results/index.html';
+            window.location = './results/index.html';
         }
         
     });

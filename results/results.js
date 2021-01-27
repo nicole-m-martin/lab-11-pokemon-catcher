@@ -43,7 +43,7 @@ button.addEventListener('click', () => {
 const pokePlays = getPokePlays();
 
 
-var myChart = new Chart(ctx, {
+var myChart = new Chart(ctx, { //eslint-disable 
     type: 'bar',
     data: {
         labels: pokeNameArray(pokePlays),

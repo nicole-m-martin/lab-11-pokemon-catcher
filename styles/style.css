@@ -95,6 +95,11 @@ footer {
   box-shadow: var(--shadow);
 }
 
+canvas {
+  width: 75%;
+  height: 500px;
+}
+
 /* @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);

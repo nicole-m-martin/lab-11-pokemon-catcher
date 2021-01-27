@@ -18,22 +18,24 @@
     <section class="main-section">
       <img class="main-logo" src="../assets/poke-p.webp" />
       <h2>Did you catch them all?</h2>
-
-      <table >
+      <button id="start-over-btn">Ready to catch some more? Click!</button>
+      <table>
         <thead>
           <tr>
-            <th>Pokemon Seen:</th>
-            <th>Pokemon Caught:</th>
+            <th>Pokemon:</th>
+            <th>Seen:</th>
+            <th>Caught:</th>
           </tr>
         </thead>
       </table>
+    </section>
+    <section id="chart">
+      <canvas id="myChart"></canvas>
+    </section>
+    
 
-      <button id="start-over-btn">Ready to catch some more? Click!</button>
-      <footer>
-        <div class="copy gutter-right">&copy; 2021 Pokemon Code Lab</div>
-      </footer>
-  
-      <script type="module" src="../results/results.js"></script>
-    </body>
-  </html>
-  
+    <footer>
+      <div class="copy gutter-right">&copy; 2021 Pokemon Code Lab</div>
+    </footer>
+    <script type="module" src="../results/results.js"></script>
+</html>

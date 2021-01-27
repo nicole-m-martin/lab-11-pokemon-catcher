@@ -1,9 +1,11 @@
-import { findByUnderscoreId } from './app.js';
+import { findByUnderscoreId } from './utils.js';
+import pokemon from './data.js';
 
-// import pokemon from './data.js';
+
 
 // Magic String or 'Key'
-const POKEPLAYS = 'POKEPLAYS'; 
+const POKEPLAYS = 'POKEPLAYS';
+const emptyBall = []; 
 
 export function getPokePlays() {
   // list the seen and ones that are caught(clicked on)
@@ -24,15 +26,12 @@ export function setPokePlays(newPlays) {
 
 export function increaseSeen(_id) {
     const plays = getPokePlays();
-    // check if the user has already seen this pokemon
+    const pokeObject = findByUnderscoreId(pokemon, _id);
     const yesPoke = findByUnderscoreId(plays, _id);
-
-    // if they have not seen that pokemon, initialize a new pokemon(object)
+   
     if (!yesPoke) {
-        // const dataPoke = findByUnderscoreId(pokemon, _id);
- 
         const newPoke = {
-            // name: dataPoke.pokebase,
+            name: pokeObject.pokebase,
             _id: _id,
             seen: 1,
             caught: 0,
@@ -55,4 +54,9 @@ export function increaseCaught(_id) {
 
     setPokePlays(plays);
 
+}
+
+export function clearPlays() {
+    const stringEmptyBall = JSON.stringify(emptyBall);
+    localStorage.setItem(POKEPLAYS, stringEmptyBall);
 }

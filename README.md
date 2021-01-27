@@ -4,7 +4,7 @@ HTML:
 Main Page:
 
 1.  3 clickable pokemon images
-2.  Add Submit button
+2.  Add Submit/Restart button
 
 Results Page:
 
@@ -20,13 +20,13 @@ JS:
 - check if they are different (they have different ids)
 - if not, randomly generate 3 more until they are different
 
-3. When a user clicks on the image:
+3. When a user clicks on the image: done!
 
    - Track which Pokemon the user picked(clicked)
    - Have 3 new Pokemon show up on the page
    - Increment the seen property for all 3 new Pokemon
 
-4. Create a eventListener so 'on click'
+4. Create a eventListener so 'on click': done!
 
 - Increment the 'captured' property of the chosen
 - If the user has played 10 times, redirect to a results page
@@ -70,7 +70,7 @@ LocalStorage: 8) Create a magic string as a key (const POKEPLAYS = 'POKEPLAYS') 
 - if not, make a new object and push it
 - if yes, increase the seen pokemon
 
-12. Create an increaseCaught function:
+12. Create an increaseCaught function: done!
 
 - check to see if the pokemon was seen before with findByID function
 - if yes, increase the caught pokemon

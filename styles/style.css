@@ -53,6 +53,13 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 2rem;
+
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
 th,
 td {
   font-size: 1rem;
